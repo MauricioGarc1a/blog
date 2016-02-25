@@ -47,9 +47,9 @@ end
 
 page "/feed.xml", layout: false
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+   activate :livereload
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -66,3 +66,6 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+# Syntak highlighting
+activate :syntax, line_numbers: true
